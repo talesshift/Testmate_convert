@@ -1,0 +1,39 @@
+
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+//base
+@import "base/base";
+
+//ubiquous components
+@import "components/header";
+@import "components/footer";
+@import "components/blank";
+
+//components
+@import "components/intro";
+@import "components/trust";
+@import "components/carousel";
+@import "components/reviews";
+@import "components/aboutUs";
+@import "components/infos";
+@import "components/how";
+@import "components/delivery";
+@import "components/save";
+@import "components/methods";
+
+@import "components/title";
+@import "components/subPages";
+@import "components/compareTable";
+@import "components/choices";
+@import "components/offer";
+
+@import "components/subTitle";
+@import "components/weDeliver";
+@import "components/who";
+@import "components/quote";
+@import "components/bubbles";
+
+
+

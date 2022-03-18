@@ -1,0 +1,73 @@
+.Intro_container{
+    width: $max-width;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin-top: 11.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    /* height:1200px; */
+    //background-color: rgba(255, 206, 73, 0.219);
+
+    .Intro_text{
+        padding-left: 0.8rem;
+        display:flex;
+        justify-content: space-around;
+        flex-direction: column;
+
+        h1{
+            font-family: visby-round,Nunito;
+            font-weight: 600;
+            font-size: 3.1rem;
+        }
+
+        .Intro_Title--orange{
+            color:$oranges;
+        }
+        
+        .Intro_Title{
+            color: $purple;
+        }
+
+        .Intro_paragraph{
+            color: $lightgrey;
+            font-size: 1.2rem;
+            font-weight: 300;
+            line-height: 1.6;
+            max-width: 32rem;
+            /* margin-top: 1.6rem; */
+        }
+        .Intro__buttons{
+            /* margin-top: 2.6rem; */
+            .Intro__button{
+                display: inline-block;
+                border-style: none;
+                text-decoration: none;
+                border-radius: 30rem;
+                //how to link this with all buttons from all pages?
+                background-color: $oranges;
+                color:$whites;
+                font-weight: 600;
+                padding: 1.2rem 2.8rem;
+                font-size: 1.2rem;
+                font-family: visby-round;
+                margin-left: -0.3rem;
+
+                &:hover{
+                  background-color: lighten($oranges,10%);
+                }
+          
+            }
+
+        }
+        
+    }
+
+    .Intro_images{
+        .Intro_image{
+            margin-right: -1rem;
+            margin-top: -3rem;
+        }
+    }
+
+}

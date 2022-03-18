@@ -1,0 +1,158 @@
+$padding_menu:4.1rem;
+$menuheight:45px;
+$logo_offset:4px;
+
+.navbar{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+
+  .navbar__container{
+    margin-top: 6.5rem;
+    width: $max-width;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .navbar__logo{
+    background-color:none;
+    padding: 0;
+    height: $menuheight;
+    margin-left: 0.8rem;
+    margin-top: -0.33rem;
+    img{
+      object-fit: cover;  
+      height: calc($menuheight - $logo_offset);
+      margin-top: calc($logo_offset/2);
+
+    }
+
+  } 
+
+  .navbar__pages{
+    flex:1;
+    display: flex;
+    justify-content: space-around;
+    max-width: 655px;
+    margin: 0 1rem;
+
+    .navbar__page{
+      display: inline-block;
+      padding: 0 0.5rem 1rem 0.5rem;
+      margin-top: 1rem;
+
+      .navbar__link{
+        text-transform: capitalize;
+        font-weight:300;
+        color:$lightgrey;
+        &:hover{
+          color: darken($lightgrey,25%);
+        }
+
+      }
+
+      &:last-child{
+        padding-right: 1rem;
+      }
+
+      &:first-child{
+        padding-left: 1rem;
+      }
+
+    }  
+
+    
+
+  
+  @keyframes showoff {
+    0%   {color: rgba(255, 255, 255, 0);margin-top: -0.5rem;border: 0px solid rgba(255, 255, 255, 0);background-color: rgba(255, 255, 255, 0);}
+    70%  {color: darken($lightgrey,25%);margin-top: 1.25rem;border: 1px solid lightgray;background-color: rgb(255, 255, 255);}
+    100% {color:$lightgrey;margin-top: 0.5rem;border: 1px solid lightgray;background-color: rgb(255, 255, 255);}
+  }
+  @keyframes showoffSVG--bg {
+    0%   {fill:rgba(255, 255, 255, 0)}
+    70%  {fill:rgb(255, 255, 255);}
+    100% {fill:rgb(255, 255, 255);}
+  }
+  @keyframes showoffSVG--bd {
+    0%   {fill:rgba(196, 196, 196,0)}
+    70%  {fill:rgb(196, 196, 196);}
+    100% {fill:rgb(196, 196, 196);}
+  }
+    $ShowOff-duration: 0.3s;
+    $ShowOff-timing: ease;
+
+    .navbar__hidden{
+      background-color: $whites;
+      border: 1px solid lightgray;
+      border-radius: 0.5rem;
+      padding: 0.5rem 2em 0.5rem 0.5rem;
+      margin-left: -0.5rem;
+      display: flex;
+      justify-content: flex-start;
+      flex-flow: column;
+      position: absolute;
+      margin-top: 0.5rem;
+      animation-name: showoff;
+      animation-duration: $ShowOff-duration;
+      animation-timing-function: $ShowOff-timing;
+
+      .navbar__hiddenSVG--background{
+        fill: $whites;
+        animation-name: showoffSVG--bg;
+        animation-duration: $ShowOff-duration;
+        animation-timing-function: $ShowOff-timing;
+      }
+      .navbar__hiddenSVG--border{
+        fill:rgb(196, 196, 196);
+        animation-name: showoffSVG--bd;
+        animation-duration: $ShowOff-duration;
+        animation-timing-function: $ShowOff-timing;
+      }
+    }
+
+  }
+
+  .navbar__buttons{
+  margin-left: auto;
+  margin-right: 0.8rem;
+  
+    .navbar__button{
+      display: inline-block;
+      border-style: none;
+      text-decoration: none;
+      border-radius: 30rem;
+    }
+
+    .navbar__button--login{
+      //specific
+      background-color: #f0ecfd;
+      color: $purple;
+      font-weight: 300;
+      padding: 0.5rem 1.9rem;
+      margin-right: 24px;
+      font-size: 0.9rem;
+
+      &:hover{
+        background-color: darken(#f0ecfd,5%);
+      }
+
+    }
+
+    .navbar__button--call{
+      //specific
+      background-color: $purple;
+      color:$whites;
+      font-weight: 600;
+      padding: 0.9rem 2.6rem;
+
+      &:hover{
+        background-color: lighten($purple,5%);
+      }
+
+    }
+
+  }
+  
+}

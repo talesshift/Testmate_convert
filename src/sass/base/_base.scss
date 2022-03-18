@@ -1,0 +1,106 @@
+//font imports
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pavanam&display=swap');
+
+@font-face {
+  font-family: 'visby-round';
+  src: url(../fonts/visbyRound/VisbyRoundCF-ExtraLight.otf) format('opentype');
+  font-style: normal;
+  font-weight: 100;
+} 
+
+@font-face {
+  font-family: 'visby-round';
+  src: url(../fonts/visbyRound/VisbyRoundCF-Light.otf) format('opentype');
+  font-style: normal;
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'Rovisby-roundboto';
+  src: url(../fonts/visbyRound/VisbyRoundCF-Regular.otf) format('opentype');
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'visby-round';
+  src: url(../fonts/visbyRound/VisbyRoundCF-Medium.otf) format('opentype');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'visby-round';
+  src: url(../fonts/visbyRound/VisbyRoundCF-DemiBold.otf ) format('opentype');
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'visby-round';
+  src: url(../fonts/visbyRound/VisbyRoundCF-Bold.otf) format('opentype');
+  font-style: normal;
+  font-weight: 600;
+}
+
+
+
+@font-face {
+  font-family: 'visby-round';
+  src: url(../fonts/visbyRound/VisbyRoundCF-ExtraBold.otf) format('opentype');
+  font-style: normal;
+  font-weight: 700;
+}
+
+
+
+@font-face {
+  font-family: 'visby-round';
+  src: url(../fonts/visbyRound/VisbyRoundCF-Heavy.otf) format('opentype');
+  font-style: normal;
+  font-weight: 800;
+}
+
+  
+
+//general
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+  scrollbar-width: none;
+}
+
+body{
+  //background-image:  linear-gradient(rgba(255, 255, 255, 0.599), rgba(255, 255, 255, 0.599)), url("../images/services/services.png");
+  background-color: rgb(255, 255, 255);
+  background-position: top;
+  background-size: 1870px;
+  a{
+     text-decoration: none;
+  }
+}
+.flexAll{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.push{
+  width:$max-width;
+  padding-left: 6rem;
+  padding-right: 3rem;
+}
+.normal{
+  width:$max-width;
+}
